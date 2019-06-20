@@ -1,0 +1,45 @@
+#post_image{
+    height: 400px;
+    margin: 0 auto;
+    max-width: 50%;
+    text-align: center;
+    display: block;
+}
+
+#created_at{
+    float: right;
+}
+
+#like_button {
+        display: inline-block;
+        padding: 7px 20px;
+        border-radius: 25px;
+        text-decoration: none;
+        color: #FFF;
+        background-image: linear-gradient(45deg, #0404d6 0%, #000099 100%);
+        transition: .4s;
+}
+      
+#like_button:hover {
+    background-image: linear-gradient(45deg, #0404d6 0%, #000099 100%);
+} 
+
+
+#post_title{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.comment {
+    margin-top: 10px;
+}
+#comment_header{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 0.9em; 
+}
+
+#comment_button {
+    background-color: #000099;
+    margin-top: 5px;
+}

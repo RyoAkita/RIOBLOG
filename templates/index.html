@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block content%}
+{% for post in post_list %}
+<div class="card container mt-3">
+    <div class="card-body">
+        <h2 class="card-title">{{post.title}}</h2>
+        <h6 class="card-subtitle mb-2 text-muted">作者: {{post.author}} カテゴリ: {{post.category}}</h6>
+        <h6>Like: {{post.likes}}</h6>
+        <a href="{% url 'blog:detail' post.pk %}" class="card-link">続きを読む</a>
+    </div>
+</div>
+{% endfor %}
+
+{% endblock content%}

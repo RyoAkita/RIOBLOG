@@ -1,0 +1,46 @@
+#navbar {
+  background-color: #993333;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+#footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #000099;
+  bottom: 0; /*下に固定*/ 
+}
+
+.wrapper {
+  min-height: 100%;
+ 
+  /* フッタの高さと等しいネガティブマージン */
+  /* また最後の子要素の潜在的なマージンとしても機能 */
+  margin-bottom: -50px;
+}
+.footer {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #000099;
+  bottom: 0; /*下に固定*/ 
+
+}
+
+.push {
+  height: 50px;
+}
+
+#category_title{
+  background-color: #993333;
+}
+
+body{
+  min-height: 100vh;
+  position: relative;
+}
