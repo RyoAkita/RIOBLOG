@@ -43,7 +43,7 @@ class CommentView(generic.CreateView):
     model = Comment
     form_class = CommentCreateForm
     template_name = 'comment.html'
-    
+
     def form_valid(self, form):
         post_pk = self.kwargs['post_pk']
         comment = form.save(commit=False)
@@ -51,5 +51,9 @@ class CommentView(generic.CreateView):
         comment.save()
         return redirect('blog:detail', pk=post_pk)   
 
+def aboutfunc(request):
+    return render(request, 'about.html')
 
+def contactfunc(request):
+    return render(request, 'contact.html')
 
